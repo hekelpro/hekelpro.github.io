@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>convert binary to decimal</title>
+    <style type="text/css">
+      body {
+        background-color: #06aff7;
+      }
+      .center {
+        display: block;
+        text-align: center;
+      }
+      .container {
+        padding-top: 50%;
+      }
+      .container .card-border {
+        display: block;
+        margin: auto;
+        padding: 20px;
+        max-width: 80%;
+        background-color: #fff;
+        border-radius: 20px 2px 20px 2px;
+      }
+      .action {
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
+      input[type=text]{
+        width: 100%;
+        height: 40px;
+        font-size: 18px;
+        border: 2px solid black;
+        text-align: center;
+        transition: all .5s;
+        outline: none;
+      }
+      input[type=text]:focus {
+        border: 2px solid #06aff7;
+      }
+      .alert-result {
+        background-color: #3ebaf6c5;
+        color: #131415;
+        padding: 20px 10px;
+        border-radius: 2%;
+        overflow: scroll;
+      }
+      #result {
+        font-weight: bolder;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-border">
+        <b class="center">CONVERT DECIMAL KE BINARY</b>
+        <div class="action">
+          <input type="text" id="decimal" placeholder="masukan decimal" />
+        </div>
+        <div class="alert-result">
+          hasilnya: <span id="result">0</span>
+        </div>
+      </div>
+    </div>
+    
+    <script type="text/javascript">
+      var decimal = document.getElementById("decimal");
+      var result = document.getElementById("result");
+      decimal.addEventListener("keyup", () => {
+        if (decimal.value == "" ){
+          result.innerHTML = "0";
+        } else if (isNaN(decimal.value)) {
+          result.innerHTML = "tipe harus angka, tidak boleh huruf"
+        } else {
+          var toBiner = parseInt(decimal.value);
+          result.innerHTML = toBiner.toString(2);
+        }
+      });
+    </script>
+  </body>
+</html>
