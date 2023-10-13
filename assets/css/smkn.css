@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+:root {
+  --bg-body: #F9FAFE;
+  --bg: #FFFFFF;
+  --t-c: black;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+  text-decoration: none;
+}
+body {
+  color: var(--t-c) !important;
+  scroll-behavior: smooth;
+  background: #1C527E !important;
+}
+.offcanvas {
+  background: #242527 !important;
+}
+.navbar-toggler, .navbar-toggler:hover, .btn-close {
+  color: #fff !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.navbar-brand img {
+  width: 50px;
+}
+
+.btnc {
+  box-sizing: content-box;
+  width: 1.5em !important;
+  padding: 0.25em 0.25em;
+  color: #fff !important;
+  background: #393A3C !important;
+  border: 0;
+  border-radius: 50%;
+  opacity: 1;
+  font-size: 20px !important;
+}
+.offcanvas-title img {
+  width: 200px;
+}
+.navbar-nav li {
+  margin: auto 10px;
+}
+.navbar-nav li a {
+  color: #fff !important;
+}
+.bg-dars {
+  background: #1C527E !important;
+  box-shadow: 0 0 9px 0 rgba(255, 255, 255, 0.202);
+}
+#home {
+  background: url('../img/prasarana/depan-sekolah.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+}
+
+#home::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.4);
+  position: absolute;
+  bottom: 0;
+}
+
+.jurus{
+  padding-top: 10%;
+}
+.home-content {
+  color: #fff !important;
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  padding-top: 70%;
+  text-align: center;
+}
+.title-section {
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.title-section::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+.title-section::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: #9a9a24;
+  padding: 0 5px;
+  background: transparent;
+  transform: translateX(-50%);
+}
+#jurusan .title-section {
+  color: #fff !important;
+}
+#jurusan .title-section::after {
+  background: #1C527E;
+  content: 'Jurusan';
+  color: gold;
+}
+#jurusan .title-section::before {
+  background: #fff;
+}
+#gallery .title-section {
+  color: #fff;
+}
+#gallery .title-section::after {
+  background: #1C527E;
+  color: gold;
+  content: 'GALLERY';
+}
+#gallery .title-section::before {
+  background: #fff;
+}
+.img-jurusan {
+  width: 10rem;
+  margin: auto;
+  display: block;
+}
+.brs {
+  border: 1px solid white;
+}
+.galery {
+  padding-top: 5%;
+}
+#gallery {
+  background-color: #1C527E !important;
+}
+.sawan .col img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+.sawan .col img:hover {
+  width: 100%;
+  filter: grayscale(0);
+}
+footer {
+  background-color: #013C5A;
+  padding: 20px;
+  margin-top: 5%;
+  width: 100%;
+  color: #fff;
+}
+.main-footer{
+  display: flex;
+  gap: 10px;
+}
+.sekolah {
+  width: 200px;
+}
+.profile {
+  width: 150px;
+  border-radius: 50%;
+  margin: auto;
+}
+.mns-font {
+  font-family: 'Secular One', sans-serif;
+  font-weight: bold;
+  color: orange;
+}
+.font-bold {
+  font-weight: bold !important;
+}
+.media {
+  display: flex;
+  gap: 20px;
+}
+.media a {
+  width: 50px;
+  text-decoration: none;
+  border-radius: 10%;
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+}
+.media a:hover {
+  color: white;
+  font-weight: bold;
+  transition: all .5s;
+}
+.fb:hover {
+  background-color: #0059ff !important;
+}
+.twit:hover {
+  background-color: #0077ff !important;
+}
+.ige:hover {
+  background-color: #ff0077 !important;
+}
+.yt:hover {
+  background-color: red !important;
+}
+.copyr {
+  background-color: rgb(255, 153, 0);
+  color: black;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+#toTop {
+  position: fixed;
+  top: 80%;
+  left: 80%;
+  width: 60px;
+  height: auto;
+  background: orange;
+  z-index: 999;
+  padding: 15px;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
+  color: #fff;
+}
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #013C5A;
+}
+
+.preloader .loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font: 14px arial;
+}
+
+.preloader i {
+  color: orange !important;
+}
+
+.preloader p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+}
+
+@media (min-width: 576px) {
+  .img-jurusan {
+    width: 20rem;
+  }
+  #toTop {
+    left: 90% !important;
+  }
+}
+@media (min-width: 750px) and (max-width: 850px) {
+  .home-content {
+    padding-top: 30%;
+  }
+}
+@media (max-width: 575.98px) {
+  .navbar-nav li a {
+    color: #fff !important;
+    font-weight: bold;
+  }
+  .navbar-nav li a:hover i {
+    color: #fff;
+  }
+  .navbar-nav li:hover {
+    background: orange !important;
+    color: #fff !important;
+    border-radius: 10px;
+    width: 100%;
+    margin: 6px 0;
+    padding: 6px;
+    transition: all .5s;
+  }
+  .navbar-nav li {
+    display: block;
+    margin: 6px 20px;
+  }
+  .navbar-nav li a i {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 980px) {
+  .navbar-nav li {
+    margin: 0 14px;
+  }
+  .navbar-nav li a {
+    color: #fff!important;
+  }
+  .navbar-nav li:hover {
+    background: orange !important;
+    color: #fff !important;
+    border-radius: 10px;
+    transition: all .5s;
+  }
+  .home-content {
+    z-index: 1;
+    position: relative;
+    padding-top: 25%;
+  }
+}
